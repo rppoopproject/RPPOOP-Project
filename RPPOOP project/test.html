@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <nav class="w3-bar w3-black">
+        <a href="#coep zest" class="w3-button w3-bar-item">COEP Zest</a>
+        <a href="#about" class="w3-button w3-bar-item">About</a>
+        <a href="#sports categories" class="w3-button w3-bar-item">Sports Categories</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    </nav>
+
+    <section>
+        <img class="mySlides" src="torch.jpg" style="width:100%">
+        <img class="mySlides" src="coeplogo.jpg" style="width:100%">
+
+    </section>
+
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">COEP ZEST</h2>
+        <p class="w3-opacity"><i>Let the games begin!</i></p>
+        <p class="w3-justify">
+            We at Coep Technological University, present to you our annual sports tournamnt Zest!....
+
+                    (more content)
+
+        </p>
+
+    </section>
+
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+        <p>Football</p>
+        <img src="basketball.jpg" alt="Random Name" style="width:100%">
+        </article>
+        <article class="w3-third">
+        <p>Basketball</p>
+        <img src="basketball.jpg" alt="Random Name" style="width:100%">
+        </article>
+        <article class="w3-third">
+        <p>Cricket</p>
+        <img src="basketball.jpg" alt="Random Name" style="width:100%">
+        </article>
+    </section>
+    
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+    </script>
+
+
+        
+</body>
+</html>
